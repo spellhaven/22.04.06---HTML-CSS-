@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>input 박스 꾸미기 (인.꾸)</title>
+    <style>
+      input[type="text"]:valid {
+        background-color: SkyBlue;
+      }
+
+      input[type="text"]:invalid {
+        background-color: #A00000;
+      }
+    </style>
+
+  </head>
+  <body>
+    <label for="">ID</label>: <input type = "text" value = "abc1234" required autofocus><br>
+    <!-- required와 autofocus는 이름만 봐도 뭐 하는지 알겠다.-->
+
+    <label for="">PW</label>: <input type = "password" value="abcd1234"><br>
+
+    PHONE NUMBER: <input type = "phone" value = "010-0000-0000" pattern = "\d{3}-\d{3,4}-\d{4}$" ><br>
+    <!-- 무슨 이런 input type이 있냐? 생겼대. -->
+
+    EMAIL: <input type="email" value = "nimotwo2@naver.com">
+    <!-- 심지어 폰 번호 형식이 맞는지, 이메일 형식이 맞는지도 풍선 도움말로 알려 준대. 와~ 정말 데박이다~~~ -->
+
+    <!-- 뭐 여튼 간에 value = "형식"을 써서 사용자들한테 어케 입력해야 할지 알려 줄 수 있내. 신기헤. -->
+
+  </body>
+</html>

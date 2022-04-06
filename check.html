@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>radio & checkbox</title>
+    <style>
+      /* +의 뜻) input 요소가 사용 가능한 상태일 때, 바로 뒤에 붙은(인접한) 형제 span을 선택한다. 어 외안돼? 나중에 한 번 보자. */
+
+      input:checked + span {
+        color: SkyBlue;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+    <input type="radio" name = "성별" value="남성" checked><span>제육볶음</span>
+    <input type="radio" name = "성별" value="여성"><span>떡볶이</span>
+    <input type="radio" name = "성별" value="그 외"><span>다른 음식</span>
+
+    <br>
+    <!--<p></p>로 줄바꿈해도 된다. -->
+
+    <input type = "checkbox" value = "car"><span>car</span>
+    <input type = "checkbox" value= "motorcycle"><span>motorcycle</span>
+    <input type = "checkbox" value= "bicycle" checked><span>bicycle</span>
+    <!-- 그냥 Cycle이라는 것도 충분히 존재하는데, 굳이 이름이 Bicycle이라는 건 얘가 양성애 성향의 사이클이란 말이다. 기계도 성소수자가 될 수 있다.-->
+
+  </body>
+</html>
